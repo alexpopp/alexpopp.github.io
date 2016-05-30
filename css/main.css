@@ -261,33 +261,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .card-info {
+    min-height: 120px;
+    padding: 15px 15px 20px 15px;
     background-color: #FFFFFF;
     position: relative;
-    min-height: 120px;
-    padding-bottom: 20px;
-}
-.card-info {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-}
-
-.card-info .moving {
-    padding: 15px;
-    background-color: #FFFFFF;
-    position: relative;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: returnBounce;
-    -moz-animation-name: returnBounce;
-    -ms-animation-name: returnBounce;
-    -o-animation-name: returnBounce;
-    animation-name: returnBounce;
 }
 
 .card-info a {
