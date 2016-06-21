@@ -425,6 +425,19 @@ a, a:hover, a:focus, .btn:focus, .btn:hover, .btn:active, .btn:active:focus, .bt
 /*	Große Schrift
 /*-------------------------------------------------------------------------*/
 
+@media only screen and (max-width: 690px) {
+
+    .bigMiddleFont {
+        font-size: 22px !important;
+        line-height: 27px !important;
+    }
+
+    .mediumMiddleFont {
+        font-size: 15px !important;
+        line-height: 20px !important;
+    }
+}
+
 .bigMiddleFont {
     color: #EBB038;
     font-size: 42px;
