@@ -497,7 +497,7 @@ div.partner div {
 
 
 #boxing {
-    background: #16203B url('../img/clouds.jpeg') no-repeat center center;
+    background: #16203B url('../img/hanaHeader1.jpeg') no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-transition: background-image 0.6s linear 0.3s;
@@ -757,7 +757,7 @@ div.icons span {
 }
 
 #parallax-container .background-image {
-    background-image: url("../img/waves.jpeg");
+    background-image: url("../img/waves5.jpeg");
     position: absolute;
     z-index: 9;
     width: 100%;
