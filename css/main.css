@@ -166,15 +166,6 @@ h1,h2,h3,h4,h5,h6 {
     margin: 100px;
 }
 
-.bigList {
-    list-style: initial
-}
-
-.bigList h5 {
-    margin-bottom: 5px;
-    margin-top: 0px
-}
-
 .references {
     background-color: #16203B;
     padding: 50px;
@@ -347,52 +338,6 @@ div.dualRow {
 
 .card .thumbnail img {
     width: 100%;
-}
-
-.card .thumb-cover {
-    padding: 15px 20px;
-    height: 100%;
-    top: 0;
-    position: absolute;
-    bottom: 0;
-    opacity: 0;
-    width: 100%;
-    background-color: rgba(255,255,255,0.95);
-}
-.thumb-cover{
-    transition: all 0.2s ease 0s;
-    -webkit-transition: all 0.2s ease 0s;
-}
-
-.card .details {
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…IgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-    background: -moz-linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.36) 62%, rgba(0,0,0,0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0.75)), color-stop(62%, rgba(0,0,0,0.36)), color-stop(100%, rgba(0,0,0,0)));
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.36) 62%, rgba(0,0,0,0) 100%);
-    background: -o-linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.36) 62%, rgba(0,0,0,0) 100%);
-    background: -ms-linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.36) 62%, rgba(0,0,0,0) 100%);
-    background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.36) 62%, rgba(0,0,0,0) 100%);
-    top: 0;
-    display: block;
-    height: 60px;
-    padding: 10px 15px 0;
-    position: absolute;
-    width: 100%;
-}
-
-.card .user {
-    font-weight: 400;
-    color: #FFFFFF;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.23);
-    line-height: 20px;
-    display: block;
-}
-
-.card .user .name {
-    line-height: 35px;
-    margin-left: 10px;
-    font-size: 16px;
-    float: left;
 }
 
 .card-info {
