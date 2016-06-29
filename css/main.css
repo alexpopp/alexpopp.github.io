@@ -177,6 +177,67 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
+
+.silmariButtonPrimary {
+    display: inline-block;
+    padding: 10px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border-radius: 1px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.15);
+    color: white;
+    background-color: #16203B;
+    transition: all 0.2s;
+}
+
+.silmariButtonPrimary:hover {
+    color: #16203B;
+    background-color: white;
+}
+
+.silmariButtonSecondary {
+    display: inline-block;
+    padding: 10px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border-radius: 1px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.15);
+    color: white;
+    background-color: #EBB038;
+    transition: all 0.2s;
+}
+
+.silmariButtonSecondary:hover {
+    color: #EBB038;
+    background-color: white;
+}
+
 /*-------------------------------------------------------------------------*/
 /*	Paper title
 /*-------------------------------------------------------------------------*/
