@@ -134,6 +134,54 @@ jQuery(document).ready(function($) {
     }
 
 
+    /***************** SQUARED SLIDER ******************/
+    var $sqWrapper = $("#sqWrapper");
+    var $sqRight = $("#sqRight");
+    var $sqLeft = $("#sqLeft");
+    var currentSlide = 0, maxSlides = $sqWrapper.children().length;
+    $sqWrapper.children().each(function(index, element) {
+
+        if ($(this).height() > $sqWrapper.parent().height()) {
+            $sqWrapper.parent().height($(this).height());
+        }
+    });
+
+    $sqRight.click(function() {
+        slideTo(++currentSlide);
+    });
+
+    $sqLeft.click(function() {
+        slideTo(--currentSlide);
+    });
+
+    function slideTo(slideNo) {
+        if (slideNo >= maxSlides) {
+            slideNo = 0;
+        } else if ( slideNo < 0 ) {
+            slideNo = maxSlides-1;
+        }
+        currentSlide = slideNo;
+
+        $sqWrapper.children().each(function(index, element) {
+
+            if ($(this).hasClass("sqSliderActive")) {
+                var that = $(this);
+                console.log("out -> ")
+                that.addClass("out");
+                setTimeout(function() {
+                    //that.hide();
+                    that.removeClass("sqSliderActive");
+                    that.removeClass("out");
+                }, 1000)
+            }
+        });
+        console.log("active -> " + slideNo)
+        //$sqWrapper.children().eq(slideNo).show();
+        $sqWrapper.children().eq(slideNo).addClass("sqSliderActive");
+    }
+    slideTo(0);
+
+
     //responsive nav
     $("body").on("click", "#toggle-nav", function () {
         $("#mobile-menu").stop(true, true).slideToggle(500);
