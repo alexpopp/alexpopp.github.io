@@ -163,7 +163,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .divider {
-    margin: 100px;
+    margin: 50px;
 }
 
 .references {
@@ -383,6 +383,8 @@ div.dualRow {
     overflow: visible !important;
     padding: 30px;
     padding-bottom: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .sqSliderButton {
@@ -845,7 +847,7 @@ div.icons span {
 }
 
 #parallax-container .background-image {
-    background-image: url("../img/waves8.jpeg");
+    background-image: url("../img/header_test16.jpeg");
     position: absolute;
     z-index: 9;
     width: 100%;
