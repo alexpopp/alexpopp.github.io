@@ -238,14 +238,258 @@ h1,h2,h3,h4,h5,h6 {
     background-color: white;
 }
 
+/* box-intro
+==================================================*/
+
+.box-intro {
+    text-align: center;
+    display: table;
+    height: 100vh;
+    width: 100%;
+}
+
+.box-intro .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.box-intro em {
+    font-style: normal;
+    text-transform: uppercase
+}
+
+b i:last-child {
+    color: #EBB038 !important;
+}
+
+.box-intro h5 {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #999;
+    line-height: 1.7
+}
+/* text rotate */
+
+.box-headline {
+    font-size: 130px;
+    line-height: 1.0;
+}
+
+.box-words-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.box-words-wrapper b {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+}
+
+.box-words-wrapper b.is-visible {
+    position: relative;
+}
+
+.no-js .box-words-wrapper b {
+    opacity: 0;
+}
+
+.no-js .box-words-wrapper b.is-visible {
+    opacity: 1;
+}
+
+.box-headline.rotate-2 .box-words-wrapper {
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
+.box-headline.rotate-2 i,
+.box-headline.rotate-2 em {
+    display: inline-block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.box-headline.rotate-2 b {
+    opacity: 0;
+}
+
+.box-headline.rotate-2 i {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateZ(-20px) rotateX(90deg);
+    transform: translateZ(-20px) rotateX(90deg);
+    opacity: 0;
+}
+
+
+.box-headline.rotate-2 i.in {
+    -webkit-animation: box-rotate-2-in 0.4s forwards;
+    animation: box-rotate-2-in 0.4s forwards;
+}
+
+
+.box-headline.rotate-2 em {
+    -webkit-transform: translateZ(20px);
+    transform: translateZ(20px);
+}
+
+
+@-webkit-keyframes box-rotate-2-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(90deg);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(-10deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(0deg);
+    }
+}
+
+@keyframes box-rotate-2-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(90deg);
+        transform: translateZ(-20px) rotateX(90deg);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(-10deg);
+        transform: translateZ(-20px) rotateX(-10deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(0deg);
+        transform: translateZ(-20px) rotateX(0deg);
+    }
+}
+
+@-webkit-keyframes box-rotate-2-out {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(0);
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(-100deg);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(-90deg);
+    }
+}
+
+@keyframes box-rotate-2-out {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(0);
+        transform: translateZ(-20px) rotateX(0);
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(-100deg);
+        transform: translateZ(-20px) rotateX(-100deg);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(-90deg);
+        transform: translateZ(-20px) rotateX(-90deg);
+    }
+}
+
+
+/* mouse effect */
+
+.mouse {
+    position: absolute;
+    width: 22px;
+    height: 42px;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -12px;
+    border-radius: 15px;
+    border: 2px solid #888;
+    -webkit-animation: intro 1s;
+    animation: intro 1s;
+}
+
+.scroll {
+    display: block;
+    width: 3px;
+    height: 3px;
+    margin: 6px auto;
+    border-radius: 4px;
+    background: #888;
+    -webkit-animation: finger 2s infinite;
+    animation: finger 2s infinite;
+}
+
+@-webkit-keyframes intro {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes finger {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+}
+
+@keyframes finger {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+}
+
 /*-------------------------------------------------------------------------*/
 /*	Paper title
 /*-------------------------------------------------------------------------*/
 
 
 .paperTitle {
-    margin-top: -30px;
-    background-color: #EBB038;
+    margin-top: -140px;
+    background: #EBB038; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #EBB038, #EBA735); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #EBB038, #EBA735); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #EBB038, #EBA735); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #EBB038, #EBA735); /* Standard syntax */
     overflow: hidden;
     border-radius: 3px;
     position: relative;
@@ -306,11 +550,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-.leftRightText a.btn {
-    background-color: #EBB038;
-    border-color: #EBB038;
-}
-
 div.dualRow {
     color: white;
     padding-bottom: 0px;
@@ -344,6 +583,12 @@ div.dualRow {
     background: -webkit-linear-gradient(top, rgba(235,176,56,1) 0%,rgba(235,176,56,1) 48%,rgba(235,176,56,0.36) 86%,rgba(235,176,56,0) 99%,rgba(235,176,56,0) 100%);
     background: linear-gradient(to bottom, rgba(22,32,59,1) 0%,rgba(22,32,59,1) 50%,rgba(22,32,59,0.36) 86%,rgba(22,32,59,0) 100%); */
 
+    background: #16203B; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right top, #263665, #16203B); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom left, #263665, #16203B); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom left, #263665, #16203B); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom left, #263665, #16203B); /* Standard syntax */
+
 
 }
 .dualRowFirst {
@@ -354,6 +599,12 @@ div.dualRow {
     /*background: -moz-linear-gradient(top, rgba(235,176,56,1) 0%, rgba(235,176,56,1) 48%, rgba(235,176,56,0.36) 86%, rgba(235,176,56,0) 99%, rgba(235,176,56,0) 100%);
     background: -webkit-linear-gradient(top, rgba(235,176,56,1) 0%,rgba(235,176,56,1) 48%,rgba(235,176,56,0.36) 86%,rgba(235,176,56,0) 99%,rgba(235,176,56,0) 100%);
     background: linear-gradient(to bottom, rgba(235,176,56,1) 0%,rgba(235,176,56,1) 48%,rgba(235,176,56,0.36) 86%,rgba(235,176,56,0) 99%,rgba(235,176,56,0) 100%);*/
+
+    background: #EBB038; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #EBB038, #EBA735); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #EBB038, #EBA735); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #EBB038, #EBA735); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #EBB038, #EBA735); /* Standard syntax */
 
 }
 
@@ -864,7 +1115,7 @@ div.icons span {
     width: 100%;
     left: 0px;
     position: absolute;
-    top: 150px;
+    top: 300px;
     z-index: 100;
     -webkit-backface-visibility: hidden;
     background:rgba(0,0,0,0.5);
@@ -901,14 +1152,14 @@ html:not(.js) #parallax-wrapper {
 }
 
 #parallax-wrapper {
-    overflow: hidden;
+    /*overflow: hidden;*/
     height: 700px;
     width: 100%;
     left: 0px;
     display: block;
     transform: translateY(-51.6px);
     visibility: visible;
-    position: fixed;
+    /*position: fixed; */
     -webkit-backface-visibility: hidden;
     z-index: 2;
 }

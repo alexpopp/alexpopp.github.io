@@ -12,6 +12,9 @@ jQuery(document).ready(function($) {
         var $windowWidth = $(window).width(), $windowHeight = $(window).height();
         var $orientationChange = 0;
 
+        $(".box-intro").hide();
+        $("#parallax-content").css("top", "150px");
+
         window.addEventListener("orientationchange", function() {
             $orientationChange = 1;
         });
@@ -36,7 +39,7 @@ jQuery(document).ready(function($) {
         var $scrollTop = $(window).scrollTop();
         var $sliderHeight = 1400;
 
-        $('#parallax-content, #parallax-container').css({ 'transform': 'translateY('+$scrollTop*-0.14+'px)', 'opacity': 1-($scrollTop/($sliderHeight-120)) });
+        $('#parallax-content').css({ 'transform': 'translateY('+$scrollTop*-0.14+'px)', 'opacity': 1-($scrollTop/($sliderHeight + 1024)) });
     }
 
 
