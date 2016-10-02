@@ -246,7 +246,7 @@ h1,h2,h3,h4,h5,h6 {
     display: table;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to bottom, white, #054b55);
+    background: linear-gradient(to bottom, white, rgb(6, 77, 88));
 }
 
 .box-intro .table-cell {
@@ -487,10 +487,10 @@ b i:last-child {
 .paperTitle {
     margin-top: -140px;
     background: #EBB038; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, #EBB038, #EBA735); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #EBB038, #EBA735); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #EBB038, #EBA735); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #EBB038, #EBA735); /* Standard syntax */
+    background: -webkit-linear-gradient(left top, #f1bc50, #EBA735); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #f1bc50, #EBA735); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #f1bc50, #EBA735); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #f1bc50, #EBA735); /* Standard syntax */
     overflow: hidden;
     border-radius: 3px;
     position: relative;
@@ -602,10 +602,10 @@ div.dualRow {
     background: linear-gradient(to bottom, rgba(235,176,56,1) 0%,rgba(235,176,56,1) 48%,rgba(235,176,56,0.36) 86%,rgba(235,176,56,0) 99%,rgba(235,176,56,0) 100%);*/
 
     background: #EBB038; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, #EBB038, #EBA735); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #EBB038, #EBA735); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #EBB038, #EBA735); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #EBB038, #EBA735); /* Standard syntax */
+    background: -webkit-linear-gradient(left top, #f1bc50, #EBA735); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #f1bc50, #EBA735); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #f1bc50, #EBA735); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #f1bc50, #EBA735); /* Standard syntax */
 
 }
 
